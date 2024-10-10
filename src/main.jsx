@@ -1,9 +1,9 @@
 import { createRoot } from 'react-dom/client'
-import './main.css'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./pages/error.jsx";
 import HomePage from './pages/home.jsx';
-import MainBody from './mainBody.jsx';
+import Products from './pages/products.jsx';
+import MainBody from './main-body.jsx';
 
 
 
@@ -20,8 +20,8 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "/user",
-        element: <HomePage />,
+        path: "/product",
+        element: <Products />,
       },
     ]
   },
