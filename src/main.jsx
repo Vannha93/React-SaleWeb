@@ -3,6 +3,7 @@ import './main.css'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./pages/error.jsx";
 import HomePage from './pages/home.jsx';
+import MainBody from './mainBody.jsx';
 
 
 
@@ -10,7 +11,7 @@ import HomePage from './pages/home.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomePage />,
+    element: <MainBody />,
     errorElement: <ErrorPage />,
     children: [
       {
@@ -18,10 +19,10 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
 
-      // {
-      //   path: "/user",
-      //   element: <User_page />,
-      // },
+      {
+        path: "/user",
+        element: <HomePage />,
+      },
     ]
   },
 ]);

@@ -1,8 +1,10 @@
+import "./home.css"
+
 export default function HomePage() {
 
     return (
-        <div>
-            <p>This is home page </p>
+        <div className="home">
+            main body
         </div>
     );
 }

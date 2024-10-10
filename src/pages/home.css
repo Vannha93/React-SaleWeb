@@ -1,0 +1,13 @@
+.home {
+    position: fixed;
+    top: 100px;
+    left: 0px;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(91, 174, 92);
+    text-align: center;
+    padding: 5px;
+
+    border-style: solid;
+    border-color: rgb(0, 0, 0)ed;
+}
