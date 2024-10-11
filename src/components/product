@@ -1,0 +1,35 @@
+import React, { useState } from 'react';
+import { Button, Modal } from 'antd';
+
+const Product = ({ name, price, image, description, onAddToCart }) => {
+    const [isModalVisible, setIsModalVisible] = useState(false);
+
+    const showModal = () => {
+        setIsModalVisible(true);
+    };
+
+    const handleCancel = () => {
+        setIsModalVisible(false);
+    };
+
+    return (
+        <div className="product-card" onClick={showModal}>
+            <img src={image} alt={name} className="product-image" />
+            <h2 className="product-name">{name}</h2>
+            <p className="product-price">${price}</p>
+            <Button type="primary" onClick={(e) => {
+                e.stopPropagation(); // Ngăn modal xuất hiện khi click button
+                onAddToCart();
+            }}>Thêm vào giỏ hàng</Button>
+
+            <Modal title={name} visible={isModalVisible} onCancel={handleCancel} footer={null}>
+                <img src={image} alt={name} className="modal-image" />
+                <p>{description}</p>
+                <p>Giá: ${price}</p>
+                <Button type="primary" onClick={onAddToCart}>Thêm vào giỏ hàng</Button>
+            </Modal>
+        </div>
+    );
+};
+
+export default Product;

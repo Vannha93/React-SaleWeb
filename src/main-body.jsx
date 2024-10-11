@@ -3,6 +3,7 @@ import { Flex, Layout } from "antd";
 import Sider from "antd/es/layout/Sider";
 import './main-body.css'
 import { Content, Footer, Header } from "antd/es/layout/layout";
+import SiderMenuBar from "./components/sider-menu-bar";
 
 export default function MainBody() {
 
@@ -14,8 +15,8 @@ export default function MainBody() {
           <Header className='headerStyle'>Header</Header>
 
           <Layout>
-            <Sider width="25%" className='siderStyle'>
-              Sider
+            <Sider width="400px" className='siderStyle'>
+              <SiderMenuBar />
             </Sider>
 
             <Content sclassName='contentStyle'>
