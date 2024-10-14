@@ -1,0 +1,37 @@
+.product-style {
+    min-width: 205px;
+    max-width: 205px;
+    min-height: 350pxp;
+    max-height: 350px;
+
+    border-radius: 0px;
+    border-style: solid;
+    border-color: rgb(239, 11, 11);
+    text-align: center;
+}
+
+.produce-name-style {
+    font-size: 16px;
+    color: #000000;
+    min-height: 40px;
+    line-height: 20px;
+    text-align: left;
+
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+
+}
+
+.price-style {
+    font-size: 18px;
+    color: #ff0000;
+    margin-top: 10px;
+    text-align: right;
+}

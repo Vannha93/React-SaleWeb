@@ -1,10 +1,12 @@
+
 import "../main-body.css"
 
-export default function HomePage() {
-
+const HomePage = () => {
     return (
         <div className="contentStyle">
-            main body
+            <h1>main</h1>
         </div>
     );
 }
+
+export default HomePage;
