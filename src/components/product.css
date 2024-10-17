@@ -1,13 +1,15 @@
 .product-style {
-    min-width: 205px;
-    max-width: 205px;
+    min-width: 225px;
+    max-width: 225px;
     min-height: 350pxp;
     max-height: 350px;
 
     border-radius: 0px;
     border-style: solid;
-    border-color: rgb(239, 11, 11);
+    border-color: rgb(192, 192, 192);
     text-align: center;
+
+    padding: 10px;
 }
 
 .produce-name-style {

@@ -17,9 +17,9 @@ const Product = (props) => {
                 src={imageSrc}
             />
             <hr />
-            <div className='produce-name-style'>
+            <h2 className='produce-name-style'>
                 {productName}
-            </div>
+            </h2>
             <div className='price-style'>
                 {formatPrice(price)}
             </div>

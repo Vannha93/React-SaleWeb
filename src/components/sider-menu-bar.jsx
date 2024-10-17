@@ -8,7 +8,6 @@ import {
 } from '@ant-design/icons';
 import cpuIcon from "../../icon/cpu_icon_160215.ico"
 import { Menu } from 'antd';
-//import { icons } from 'antd/es/image/PreviewGroup';
 const items = [
     {
         key: '1',

@@ -15,28 +15,25 @@
 }
 
 .contentStyle {
-    margin-left: 410px;
+    display: flex;
+    margin-left: 10px;
     padding: 10px;
     text-align: center;
-    min-height: 120px;
 
     border-radius: 10px;
     border-style: solid;
     border-width: 3px;
-    border-color: rgb(165, 172, 172);
+    border-color: rgb(172, 165, 169);
 
-    min-height: calc(100vh - 92px - 92px);
+    min-height: 350px;
     max-height: calc(100vh - 92px - 92px);
 }
 
 .siderStyle {
-    position: fixed;
+    display: flex;
     color: #fff;
-    background-color: #1677ff;
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 3px;
-    border-color: rgb(165, 172, 172);
+    background: inherit;
+
 
     max-height: calc(100vh - 92px - 92px);
 }
@@ -58,7 +55,6 @@
 
 .layoutStyle {
     margin-top: 100px;
-    overflow: hidden;
     width: calc(100%);
     max-width: calc(100%);
     min-width: 600px;
