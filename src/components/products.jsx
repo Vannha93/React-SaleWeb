@@ -10,7 +10,7 @@ const Products = () => {
     for (let index = 0; index < itemCount; index++) {
         items.push({
             key: index + 1,
-            imageSrc: "https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png",
+            imageSrc: "../../image/1.png",
             productName: `Product Name mario  mario  mario  mario  mario  mario  mario  mario  mario ${index + 1}`,
             price: 100000 + index * 10000 // Tăng giá sản phẩm cho mỗi sản phẩm
         });

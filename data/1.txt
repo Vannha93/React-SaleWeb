@@ -1,0 +1,50 @@
+[image]../../image/1.png
+[name]This is name of product 1
+[description]this is description1
+[price]10000001
+#
+[image]../../image/1.png
+[name]This is name of product 2
+[description]this is description2
+[price]10000002
+#
+[image]../../image/1.png
+[name]This is name of product 3
+[description]this is description3
+[price]10000003
+#
+[image]../../image/1.png
+[name]This is name of product 4
+[description]this is description4
+[price]10000004
+#
+[image]../../image/1.png
+[name]This is name of product 5
+[description]this is description5
+[price]10000005
+#
+[image]../../image/1.png
+[name]This is name of product 6
+[description]this is description6
+[price]10000006
+#
+[image]../../image/1.png
+[name]This is name of product 7
+[description]this is description7
+[price]10000007
+#
+[image]../../image/1.png
+[name]This is name of product 8
+[description]this is description8
+[price]10000008
+#
+[image]../../image/1.png
+[name]This is name of product 9
+[description]this is description9
+[price]10000009
+#
+[image]../../image/1.png
+[name]This is name of product 10
+[description]this is description10
+[price]100000010
+#
