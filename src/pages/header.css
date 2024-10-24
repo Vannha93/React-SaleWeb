@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    align-items: center;
+
+    min-width: 100vh;
+    max-height: 100px;
+}
+
+.logo {
+    flex: 0 0 100px;
+    max-width: 100px;
+    max-height: 100px;
+    /* Logo cố định chiều rộng 100px */
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.search {
+    flex-grow: 1;
+    /* Lấy toàn bộ không gian còn lại */
+    margin: 0 10px;
+    /* Khoảng cách giữa các phần */
+}
+
+.search input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.cart-icon {
+    cursor: pointer;
+    flex: 0 0 100px;
+    /* Giỏ hàng cố định chiều rộng 50px */
+    display: flex;
+    justify-content: center;
+    color: #3e4041;
+}
+
+.cart-icon:hover {
+    color: blue;
+}

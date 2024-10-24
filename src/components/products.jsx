@@ -3,25 +3,16 @@ import "../main-body.css"
 import Product from "./product";
 import "./products.css"
 import { Col, Row } from "antd";
+import { useOutletContext } from "react-router-dom";
 
 const Products = () => {
-
-    //const items = [];
-    // const itemCount = 16;
-    // for (let index = 0; index < itemCount; index++) {
-    //     items.push({
-    //         key: index + 1,
-    //         imageSrc: "../../image/1.png",
-    //         productName: `Product Name mario  mario  mario  mario  mario  mario  mario  mario  mario ${index + 1}`,
-    //         price: 100000 + index * 10000 // Tăng giá sản phẩm cho mỗi sản phẩm
-    //     });
-    // }
-
+    const { cartItems, setCartItems, addItemToCart } = useOutletContext();
+    //debugger;
     const [items, setItems] = useState([]);
     const [fileContent, setFileContent] = useState("init");
 
     useEffect(() => {
-        // Fetch file từ thư mục public
+        // Fetch file
         fetch("https://raw.githubusercontent.com/Vannha93/React-SaleWeb/main/data/1.txt")
             .then((response) => response.text())
             .then((text) => {
@@ -31,9 +22,9 @@ const Products = () => {
             .catch((error) => console.error("Error fetching the file:", error));
     }, []);
 
-    // Hàm parse nội dung file txt thành danh sách item
+    // Convert txt to list item
     const parseFileContentToList = (content) => {
-        const lines = content.split("\n"); // Tách nội dung file thành các dòng
+        const lines = content.split("\n");
         const tmp_items = [];
         let item = {};
         for (var i = 0; i <= lines.length - 1; i++) {
@@ -67,15 +58,21 @@ const Products = () => {
             <Row className="grid-product-style" gutter={16}>
                 {items.map(item => (
                     <Col key={item.key} ali>
-                        <Product
-                            imageSrc={item.image}
-                            productName={item.name}
-                            price={item.price}
-                        />
+                        <p className="item">
+                            <Product
+                                imageSrc={item.image}
+                                productName={item.name}
+                                price={item.price}
+                                description={item.description}
+                                cartItems={cartItems}
+                                setCartItems={setCartItems}
+                                addItemToCart={addItemToCart}
+                            />
+                        </p>
                     </Col>
                 ))}
             </Row>
-        </div>
+        </div >
     );
 }
 
