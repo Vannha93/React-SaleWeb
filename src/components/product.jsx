@@ -60,7 +60,6 @@ const Product = (props) => {
                         {productName}
                     </h2>
                     <div className='price-style'>
-
                         {formatPrice(price)}
                     </div>
                 </div>
@@ -95,7 +94,9 @@ const Product = (props) => {
                     <div className="detailContent">
                         <h1>Thông tin chi tiết</h1>
                         <h2 style={{ textAlign: "left" }}>Mô tả: </h2>
-                        <p style={{ textAlign: "left" }}>{description}</p>
+                        <p style={{ textAlign: "left" }}>
+                            {description}
+                        </p>
                     </div>
                 </div>
             </Modal>

@@ -1,0 +1,11 @@
+[image]../../image/1.png
+[name]This is name of product 1
+[description]this is description1
+[price]10000001
+#
+[image]../../image/1.png
+[image]../../image/1.png
+[name]This is name of product 2
+[description]this is description2
+[price]10000002
+#

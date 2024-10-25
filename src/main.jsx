@@ -13,67 +13,67 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <HomePage />,
+        element: <Products data="../../data/home.txt" />,
       },
       {
         path: "/Laptop",
-        element: <Products />,
+        element: <Products data="../../data/laptop.txt" productType="Laptop" />,
       },
       {
         path: "/Screen",
-        element: <Products />,
+        element: <Products data="../../data/screen.txt" productType="Màn hình máy tính" />,
       },
       {
         path: "/CPU",
-        element: <Products />,
+        element: <Products data="../../data/comming-soon.txt" productType="CPU" />,
       },
       {
         path: "/Mainboard",
-        element: <Products />,
+        element: <Products data="../../data/comming-soon.txt" productType="Mainboard" />,
       },
       {
         path: "/VGA",
-        element: <Products />,
+        element: <Products data="../../data/comming-soon.txt" productType="VGA" />,
       },
       {
         path: "/RAM",
-        element: <Products />,
+        element: <Products data="../../data/comming-soon.txt" productType="RAM" />,
       },
       {
         path: "/Power",
-        element: <Products />,
+        element: <Products data="../../data/comming-soon.txt" productType="Nguồn" />,
       },
       {
         path: "/SSD",
-        element: <Products />,
+        element: <Products data="../../data/comming-soon.txt" productType="SSD" />,
       },
       {
         path: "/HDD",
-        element: <Products />,
+        element: <Products data="../../data/comming-soon.txt" productType="HDD" />,
       },
       {
         path: "/USB",
-        element: <Products />,
+        element: <Products data="../../data/comming-soon.txt" productType="USB" />,
       },
       {
         path: "/MemoryCard",
-        element: <Products />,
+        element: <Products data="../../data/comming-soon.txt" productType="Thẻ nhớ" />,
       },
       {
         path: "/Keyboard",
-        element: <Products />,
+        element: <Products data="../../data/comming-soon.txt" productType="Bàn phím" />,
       },
       {
         path: "/Mouse",
-        element: <Products />,
+        element: <Products data="../../data/comming-soon.txt" productType="Chuột" />,
       },
       {
         path: "/Headphone",
-        element: <Products />,
+        element: <Products data="../../data/comming-soon.txt" productType="Tai nghe" />,
       },
       {
         path: "/Webcam",
-        element: <Products />,
+        element: <Products data="../../data/comming-soon.txt" productType="Webcam" />,
       },
 
     ]

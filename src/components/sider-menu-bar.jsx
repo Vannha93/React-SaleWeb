@@ -18,7 +18,7 @@ const items = [
     {
         key: '/Monitor',
         icon: <DesktopOutlined />,
-        label: "Màn hình máy tính",
+        label: <Link to="/Screen">Màn hình máy tính</Link>,
     },
     {
         key: '/Components',

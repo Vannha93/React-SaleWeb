@@ -6,24 +6,22 @@ import { Col, Row } from "antd";
 import { useOutletContext } from "react-router-dom";
 
 const Products = (props) => {
-    const dataPath = props;
     const { cartItems, setCartItems, addItemToCart } = useOutletContext();
-    const [data, setData] = useState("../../data/Laptop_data.txt");
+    const { data, productType } = props;
     const [items, setItems] = useState([]);
     const [fileContent, setFileContent] = useState("init");
 
+
     useEffect(() => {
-        setData();
         // Fetch file
         fetch(data)
             .then((response) => response.text())
             .then((text) => {
-                //debugger;
                 setFileContent(text);
                 setItems(parseFileContentToList(text));
             })
             .catch((error) => console.error("Error fetching the file:", error));
-    }, []);
+    }, [data]);
 
     // Convert txt to list item
     const parseFileContentToList = (content) => {
@@ -32,10 +30,9 @@ const Products = (props) => {
         let item = {
             image: [],
             name: "",
-            description: "",
+            description: [],
             price: 0
         };
-        //debugger;
         for (var i = 0; i <= lines.length - 1; i++) {
             while (lines[i].trim() != "#" && i < lines.length) {
                 const line = lines[i].trim();
@@ -44,7 +41,7 @@ const Products = (props) => {
                 } else if (line.includes("[name]")) {
                     item.name = line.replace("[name]", "");
                 } else if (line.includes("[description]")) {
-                    item.description = line.replace("[description]", "");
+                    item.description.push(line.replace("[description]", ""));
                 } else if (line.includes("[price]")) {
                     item.price = line.replace("[price]", "");
                 }
@@ -60,33 +57,39 @@ const Products = (props) => {
             item = {
                 image: [],
                 name: "",
-                description: "",
+                description: [],
                 price: 0
             };; // reset item
         }
+
         return tmp_items;
     };
 
     return (
-        <div className="contentStyle">
-            <Row className="grid-product-style" gutter={16}>
-                {items.map(item => (
-                    <Col key={item.key} ali>
-                        <p className="item">
-                            <Product
-                                imageSrc={item.image}
-                                productName={item.name}
-                                price={item.price}
-                                description={item.description}
-                                cartItems={cartItems}
-                                setCartItems={setCartItems}
-                                addItemToCart={addItemToCart}
-                            />
-                        </p>
-                    </Col>
-                ))}
-            </Row>
-        </div >
+        <>
+            <h2 className={"type-name"}>
+                {productType}
+            </h2>
+            <div className="contentStyle">
+                <Row className="grid-product-style" gutter={16}>
+                    {items.map(item => (
+                        <Col key={item.key} ali>
+                            <p className="item">
+                                <Product
+                                    imageSrc={item.image}
+                                    productName={item.name}
+                                    price={item.price}
+                                    description={item.description}
+                                    cartItems={cartItems}
+                                    setCartItems={setCartItems}
+                                    addItemToCart={addItemToCart}
+                                />
+                            </p>
+                        </Col>
+                    ))}
+                </Row>
+            </div >
+        </>
     );
 }
 

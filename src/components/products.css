@@ -26,3 +26,10 @@ pre.demo-code {
 .ant-col {
     padding: 0;
 }
+
+.type-name {
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    ;
+}
