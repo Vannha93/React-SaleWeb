@@ -3,8 +3,6 @@
 }
 
 [class~='ant-col']>div {
-    border-style: solid;
-    border-width: 1px;
     margin-bottom: 15px;
 }
 
@@ -19,8 +17,6 @@ pre {
     flex-grow: 1;
     overflow: auto;
     text-align: center;
-    border-style: solid;
-    border-width: 1px;
 }
 
 pre.demo-code {

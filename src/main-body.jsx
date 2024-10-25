@@ -9,15 +9,7 @@ import { useState } from "react";
 
 export default function MainBody() {
 
-  const [cartItems, setCartItems] = useState([
-    // {
-    //   id: 1,
-    //   image: "../../image/1.png",
-    //   name: "Sản phẩm 1",
-    //   quantity: 2,
-    //   price: 100000,
-    // }
-  ])
+  const [cartItems, setCartItems] = useState([])
   const addItemToCart = (newItem) => {
     setCartItems([...cartItems, newItem]);
   };
@@ -26,7 +18,6 @@ export default function MainBody() {
     <>
       <Flex gap="middle" wrap>
         <Layout className='layoutStyle'>
-
           <Header className='headerStyle'>
             <HeaderContent
               cartItems={cartItems}
@@ -46,9 +37,6 @@ export default function MainBody() {
             </Content>
           </Layout>
 
-          <Footer className='footerStyle'>
-            Footer
-          </Footer>
         </Layout>
       </Flex>
 

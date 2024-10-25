@@ -5,17 +5,20 @@ import "./products.css"
 import { Col, Row } from "antd";
 import { useOutletContext } from "react-router-dom";
 
-const Products = () => {
+const Products = (props) => {
+    const dataPath = props;
     const { cartItems, setCartItems, addItemToCart } = useOutletContext();
-    //debugger;
+    const [data, setData] = useState("../../data/Laptop_data.txt");
     const [items, setItems] = useState([]);
     const [fileContent, setFileContent] = useState("init");
 
     useEffect(() => {
+        setData();
         // Fetch file
-        fetch("https://raw.githubusercontent.com/Vannha93/React-SaleWeb/main/data/1.txt")
+        fetch(data)
             .then((response) => response.text())
             .then((text) => {
+                //debugger;
                 setFileContent(text);
                 setItems(parseFileContentToList(text));
             })
@@ -26,17 +29,23 @@ const Products = () => {
     const parseFileContentToList = (content) => {
         const lines = content.split("\n");
         const tmp_items = [];
-        let item = {};
+        let item = {
+            image: [],
+            name: "",
+            description: "",
+            price: 0
+        };
+        //debugger;
         for (var i = 0; i <= lines.length - 1; i++) {
             while (lines[i].trim() != "#" && i < lines.length) {
                 const line = lines[i].trim();
-                if (!item.image && line.includes("[image]")) {
-                    item.image = line.replace("[image]", "");
-                } else if (!item.name && line.includes("[name]")) {
+                if (line.includes("[image]")) {
+                    item.image.push(line.replace("[image]", ""));
+                } else if (line.includes("[name]")) {
                     item.name = line.replace("[name]", "");
-                } else if (!item.description && line.includes("[description]")) {
+                } else if (line.includes("[description]")) {
                     item.description = line.replace("[description]", "");
-                } else if (!item.price && line.includes("[price]")) {
+                } else if (line.includes("[price]")) {
                     item.price = line.replace("[price]", "");
                 }
 
@@ -48,7 +57,12 @@ const Products = () => {
             if (Object.keys(item).length > 0) {
                 tmp_items.push(item);
             }
-            item = {}; // reset item
+            item = {
+                image: [],
+                name: "",
+                description: "",
+                price: 0
+            };; // reset item
         }
         return tmp_items;
     };

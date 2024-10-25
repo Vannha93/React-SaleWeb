@@ -6,7 +6,7 @@ const Product = (props) => {
 
     const [open, setOpen] = useState(false);
     const { imageSrc, productName, price, description, cartItems, setCartItems, addItemToCart } = props;
-
+    //debugger;
     // Custom CSS cho carousel
     const carouselContainerStyle = {
         width: "500px", // Chiều ngang cố định
@@ -53,7 +53,7 @@ const Product = (props) => {
                 <div className='product-style'>
                     <img
                         style={{ width: '200px', height: '200px' }}
-                        src={imageSrc}
+                        src={imageSrc[0]}
                     />
                     <hr />
                     <h2 className='produce-name-style'>
@@ -79,24 +79,17 @@ const Product = (props) => {
                 <div className="modal-content">
                     <div className="image-slide-form">
                         <Carousel arrows infinite={false}>
-                            <div style={carouselContainerStyle}>
-                                <h3 className="contentStyle">
-                                    <img
-                                        src={imageSrc}
-                                        alt="image"
-                                        style={imageStyle}
-                                    />
-                                </h3>
-                            </div>
-                            <div style={carouselContainerStyle}>
-                                <h3 className="contentStyle">
-                                    <img
-                                        src={imageSrc}
-                                        alt="image"
-                                        style={imageStyle}
-                                    />
-                                </h3>
-                            </div>
+                            {imageSrc.map((item) => (
+                                <div style={carouselContainerStyle} key={item.key}>
+                                    <h3 className="contentStyle">
+                                        <img
+                                            src={item}
+                                            alt="image"
+                                            style={imageStyle}
+                                        />
+                                    </h3>
+                                </div>
+                            ))}
                         </Carousel>
                     </div>
                     <div className="detailContent">

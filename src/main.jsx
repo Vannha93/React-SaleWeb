@@ -15,11 +15,67 @@ const router = createBrowserRouter([
         index: true,
         element: <HomePage />,
       },
-
       {
-        path: "/Test",
+        path: "/Laptop",
         element: <Products />,
       },
+      {
+        path: "/Screen",
+        element: <Products />,
+      },
+      {
+        path: "/CPU",
+        element: <Products />,
+      },
+      {
+        path: "/Mainboard",
+        element: <Products />,
+      },
+      {
+        path: "/VGA",
+        element: <Products />,
+      },
+      {
+        path: "/RAM",
+        element: <Products />,
+      },
+      {
+        path: "/Power",
+        element: <Products />,
+      },
+      {
+        path: "/SSD",
+        element: <Products />,
+      },
+      {
+        path: "/HDD",
+        element: <Products />,
+      },
+      {
+        path: "/USB",
+        element: <Products />,
+      },
+      {
+        path: "/MemoryCard",
+        element: <Products />,
+      },
+      {
+        path: "/Keyboard",
+        element: <Products />,
+      },
+      {
+        path: "/Mouse",
+        element: <Products />,
+      },
+      {
+        path: "/Headphone",
+        element: <Products />,
+      },
+      {
+        path: "/Webcam",
+        element: <Products />,
+      },
+
     ]
   },
 ]);

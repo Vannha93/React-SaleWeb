@@ -18,22 +18,17 @@
     padding: 10px;
     text-align: center;
 
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 3px;
-    border-color: rgb(172, 165, 169);
-
     min-height: 350px;
-    max-height: calc(100vh - 92px - 92px);
+    max-height: calc(100vh - 120px);
 }
 
 .siderStyle {
     display: flex;
     color: #fff;
     background: inherit;
+    overflow: auto;
 
-
-    max-height: calc(100vh - 92px - 92px);
+    max-height: calc(100vh - 120px);
 }
 
 .footerStyle {

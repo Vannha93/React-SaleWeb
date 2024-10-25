@@ -4,20 +4,30 @@
 [price]10000001
 #
 [image]../../image/1.png
+[image]../../image/1.png
 [name]This is name of product 2
 [description]this is description2
 [price]10000002
 #
+[image]../../image/1.png
+[image]../../image/1.png
 [image]../../image/1.png
 [name]This is name of product 3
 [description]this is description3
 [price]10000003
 #
 [image]../../image/1.png
+[image]../../image/1.png
+[image]../../image/1.png
+[image]../../image/1.png
 [name]This is name of product 4
 [description]this is description4
 [price]10000004
 #
+[image]../../image/1.png
+[image]../../image/1.png
+[image]../../image/1.png
+[image]../../image/1.png
 [image]../../image/1.png
 [name]This is name of product 5
 [description]this is description5

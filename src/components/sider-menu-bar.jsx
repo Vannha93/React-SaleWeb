@@ -1,123 +1,116 @@
-
 import './sider-menu-bar.css';
-import {
-    LaptopOutlined,
-    DesktopOutlined,
-    BarsOutlined,
-    RightOutlined
-} from '@ant-design/icons';
-import cpuIcon from "../../icon/cpu_icon_160215.ico"
+import { LaptopOutlined, DesktopOutlined, BarsOutlined, RightOutlined, HomeOutlined } from '@ant-design/icons';
+import cpuIcon from "../../icon/cpu_icon_160215.ico";
 import { Menu } from 'antd';
+import { Link, useLocation } from 'react-router-dom';
+
 const items = [
     {
-        key: '1',
-        icon: <LaptopOutlined />,
-        label: 'Laptop',
+        key: '/',
+        icon: <HomeOutlined />,
+        label: <Link to="/">Home</Link>,
     },
     {
-        key: '2',
+        key: '/Laptop',
+        icon: <LaptopOutlined />,
+        label: <Link to="/Laptop">Laptop</Link>,
+    },
+    {
+        key: '/Monitor',
         icon: <DesktopOutlined />,
         label: "Màn hình máy tính",
     },
     {
-        key: '3',
+        key: '/Components',
         label: 'Linh kiện máy tính',
         icon: <img src={cpuIcon} alt="cpu" style={{ width: 16 }} />,
         children: [
             {
-                key: '3.1',
-                label: 'CPU',
-                icons: <RightOutlined />
+                key: '/CPU',
+                label: <Link to="/CPU">CPU</Link>,
+                icon: <RightOutlined />
             },
             {
-                key: '3.2',
-                label: 'Mainboard',
-                icons: <RightOutlined />
+                key: '/Mainboard',
+                label: <Link to="/Mainboard">Mainboard</Link>,
+                icon: <RightOutlined />
             },
             {
-                key: '3.3',
-                label: 'VGA',
-                icons: <RightOutlined />
+                key: '/VGA',
+                label: <Link to="/VGA">VGA</Link>,
+                icon: <RightOutlined />
             },
             {
-                key: '3.4',
-                label: 'RAM',
-                icons: <RightOutlined />
+                key: '/RAM',
+                label: <Link to="/RAM">RAM</Link>,
+                icon: <RightOutlined />
             },
             {
-                key: '3.5',
-                label: 'Nguồn',
-                icons: <RightOutlined />
+                key: '/Power',
+                label: <Link to="/Power">Nguồn</Link>,
+                icon: <RightOutlined />
             },
             {
-                key: '3.6',
+                key: '/Storage',
                 label: 'Lưu trữ',
-                icons: <RightOutlined />,
+                icon: <RightOutlined />,
                 children: [
                     {
-                        key: '3.6.1',
-                        label: 'SSD',
+                        key: '/SSD',
+                        label: <Link to="/SSD">SSD</Link>,
                     },
                     {
-                        key: '3.6.2',
-                        label: 'HDD',
+                        key: '/HDD',
+                        label: <Link to="/HDD">HDD</Link>,
                     },
                     {
-                        key: '3.6.3',
-                        label: 'USB',
+                        key: '/USB',
+                        label: <Link to="/USB">USB</Link>,
                     },
                     {
-                        key: '3.6.4',
-                        label: 'Thẻ nhớ',
+                        key: '/MemoryCard',
+                        label: <Link to="/MemoryCard">Thẻ nhớ</Link>,
                     },
                 ],
             },
-
         ],
     },
     {
-        key: '4',
+        key: '/Accessories',
         label: 'Phụ kiện',
         icon: <BarsOutlined />,
         children: [
             {
-                key: '4.1',
-                label: 'Bàn phím',
+                key: '/Keyboard',
+                label: <Link to="/Keyboard">Bàn phím</Link>,
             },
             {
-                key: '4.2',
-                label: 'Chuột',
+                key: '/Mouse',
+                label: <Link to="/Mouse">Chuột</Link>,
             },
             {
-                key: '4.3',
-                label: 'Tai nghe',
+                key: '/Headphone',
+                label: <Link to="/Headphone">Tai nghe</Link>,
             },
             {
-                key: '4.4',
-                label: 'Webcam',
+                key: '/Webcam',
+                label: <Link to="/Webcam">Webcam</Link>,
             },
         ],
     },
-    {
-        key: 'link',
-        icon: <RightOutlined />,
-        label: (
-            <a href="https://ant.design" target="_blank" rel="noopener noreferrer">
-                Ant Design
-            </a>
-        ),
-    },
 ];
+
 const SiderMenuBar = () => {
+    const location = useLocation(); // get current location
+
     return (
-        <>
-            <Menu className="menu-style"
-                defaultSelectedKeys={['1']}
-                defaultOpenKeys={['1']}
-                items={items}
-                mode='inline'
-            />
-        </>
+        <Menu
+            className="menu-style"
+            mode="inline"
+            selectedKeys={[location.pathname]} // set selectedKeys base on current location
+            items={items}
+        />
     );
 };
+
 export default SiderMenuBar;
