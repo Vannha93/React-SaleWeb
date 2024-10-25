@@ -19,19 +19,146 @@
 
 [price]1930000
 #
-[name]Laptop HP 15S FR5005TU
+[name]Màn hình Viewsonic VA1903A | 18.5 inch, TN, 60Hz, phẳng
 
-[image]../../image/Laptop2.1.webp
-[image]../../image/Laptop2.2.webp
-[image]../../image/Laptop2.3.png
-[image]../../image/Laptop2.4.webp
+[image]../../image/Screen2.1.webp
+[image]../../image/Screen2.2.webp
+[image]../../image/Screen2.3.webp
+[image]../../image/Screen2.4.webp
 
-[description]CPU: Intel® Core™ i7 1260P
-[description]Ram: 16GB DDR4
-[description]Ổ cứng: SSD 512GB
-[description]Màn hình: 15.6 inch FHD
-[description]Card đồ họa: Intel Iris Xe Graphics
-[description]Màu sắc: Bạc
+[description]Hãng sản xuất	Viewsonic
+[description]Loại màn hình	Màn hình LCD
+[description]Kích thước	18.5 inch
+[description]Trọng lượng	Đang cập nhật
+[description]Độ phân giải	HD+ (1366 x 768)
+[description]Tỉ lệ màn hình	16:9
+[description]Tần số quét	60Hz
+[description]Thời gian phản hồi	5ms
+[description]Loại tấm nền	TN
+[description]Độ sáng	200 cd/m2
 
-[price]14790000
+[price]1350000
+#
+[name]LMàn hình Xiaomi Redmi 1A P24FBB-RA | 23.8 inch, Full HD, IPS, 100Hz, phẳng
+
+[image]../../image/Screen1.1.webp
+[image]../../image/Screen1.2.webp
+[image]../../image/Screen1.3.webp
+[image]../../image/Screen1.4.webp
+
+[description]Hãng sản xuất	    Xiaomi
+[description]Loại màn hình	    IPS
+[description]Kích thước	        23.8 inch
+[description]Trọng lượng	    2.98 kg
+[description]Độ phân giải	    1920 x 1080
+[description]Tỉ lệ màn hình	    16:9
+[description]Tần số quét	    100Hz
+[description]Thời gian phản hồi	Chưa có thông tin
+[description]Loại tấm nền	    IPS
+[description]Độ sáng	        250 nit
+[description]Tỉ lệ tương phản	1000:1
+
+[price]1930000
+#
+[name]Màn hình Viewsonic VA1903A | 18.5 inch, TN, 60Hz, phẳng
+
+[image]../../image/Screen2.1.webp
+[image]../../image/Screen2.2.webp
+[image]../../image/Screen2.3.webp
+[image]../../image/Screen2.4.webp
+
+[description]Hãng sản xuất	Viewsonic
+[description]Loại màn hình	Màn hình LCD
+[description]Kích thước	18.5 inch
+[description]Trọng lượng	Đang cập nhật
+[description]Độ phân giải	HD+ (1366 x 768)
+[description]Tỉ lệ màn hình	16:9
+[description]Tần số quét	60Hz
+[description]Thời gian phản hồi	5ms
+[description]Loại tấm nền	TN
+[description]Độ sáng	200 cd/m2
+
+[price]1350000
+#
+[name]LMàn hình Xiaomi Redmi 1A P24FBB-RA | 23.8 inch, Full HD, IPS, 100Hz, phẳng
+
+[image]../../image/Screen1.1.webp
+[image]../../image/Screen1.2.webp
+[image]../../image/Screen1.3.webp
+[image]../../image/Screen1.4.webp
+
+[description]Hãng sản xuất	    Xiaomi
+[description]Loại màn hình	    IPS
+[description]Kích thước	        23.8 inch
+[description]Trọng lượng	    2.98 kg
+[description]Độ phân giải	    1920 x 1080
+[description]Tỉ lệ màn hình	    16:9
+[description]Tần số quét	    100Hz
+[description]Thời gian phản hồi	Chưa có thông tin
+[description]Loại tấm nền	    IPS
+[description]Độ sáng	        250 nit
+[description]Tỉ lệ tương phản	1000:1
+
+[price]1930000
+#
+[name]Màn hình Viewsonic VA1903A | 18.5 inch, TN, 60Hz, phẳng
+
+[image]../../image/Screen2.1.webp
+[image]../../image/Screen2.2.webp
+[image]../../image/Screen2.3.webp
+[image]../../image/Screen2.4.webp
+
+[description]Hãng sản xuất	Viewsonic
+[description]Loại màn hình	Màn hình LCD
+[description]Kích thước	18.5 inch
+[description]Trọng lượng	Đang cập nhật
+[description]Độ phân giải	HD+ (1366 x 768)
+[description]Tỉ lệ màn hình	16:9
+[description]Tần số quét	60Hz
+[description]Thời gian phản hồi	5ms
+[description]Loại tấm nền	TN
+[description]Độ sáng	200 cd/m2
+
+[price]1350000
+#
+[name]LMàn hình Xiaomi Redmi 1A P24FBB-RA | 23.8 inch, Full HD, IPS, 100Hz, phẳng
+
+[image]../../image/Screen1.1.webp
+[image]../../image/Screen1.2.webp
+[image]../../image/Screen1.3.webp
+[image]../../image/Screen1.4.webp
+
+[description]Hãng sản xuất	    Xiaomi
+[description]Loại màn hình	    IPS
+[description]Kích thước	        23.8 inch
+[description]Trọng lượng	    2.98 kg
+[description]Độ phân giải	    1920 x 1080
+[description]Tỉ lệ màn hình	    16:9
+[description]Tần số quét	    100Hz
+[description]Thời gian phản hồi	Chưa có thông tin
+[description]Loại tấm nền	    IPS
+[description]Độ sáng	        250 nit
+[description]Tỉ lệ tương phản	1000:1
+
+[price]1930000
+#
+[name]Màn hình Viewsonic VA1903A | 18.5 inch, TN, 60Hz, phẳng
+
+[image]../../image/Screen2.1.webp
+[image]../../image/Screen2.2.webp
+[image]../../image/Screen2.3.webp
+[image]../../image/Screen2.4.webp
+
+[description]Hãng sản xuất	Viewsonic
+[description]Loại màn hình	Màn hình LCD
+[description]Kích thước	18.5 inch
+[description]Trọng lượng	Đang cập nhật
+[description]Độ phân giải	HD+ (1366 x 768)
+[description]Tỉ lệ màn hình	16:9
+[description]Tần số quét	60Hz
+[description]Thời gian phản hồi	5ms
+[description]Loại tấm nền	TN
+[description]Độ sáng	200 cd/m2
+
+[price]1350000
 #
