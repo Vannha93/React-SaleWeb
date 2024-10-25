@@ -3,15 +3,15 @@ import './my-cart.css';
 
 const MyCart = (props) => {
     const { cartItems, setCartItems, addItemToCart } = props;
-    //debugger;
 
     const calculateTotal = (items) => {
         //debugger;
         return items.reduce((acc, item) => acc + item.price * item.quantity, 0);
     };
 
-    const handleDeleteItem = () => {
-
+    const handleDeleteItem = (id) => {
+        const updatedCartItems = cartItems.filter(item => item.id !== id);
+        setCartItems(updatedCartItems);
     }
 
     return (
@@ -37,7 +37,7 @@ const MyCart = (props) => {
                             <td>{item.quantity}</td>
                             <td>{item.price.toLocaleString("vi-VN")} đ</td>
                             <td>{(item.price * item.quantity).toLocaleString("vi-VN")} đ</td>
-                            <td><DeleteOutlined style={{ cursor: 'pointer', color: 'black' }} onclick={() => { handleDeleteItem() }} /></td>
+                            <td><DeleteOutlined style={{ cursor: 'pointer', color: 'black' }} onclick={() => { handleDeleteItem(item.id) }} /></td>
                         </tr>
                     ))}
                 </tbody>
