@@ -1,11 +1,85 @@
-[image]../../image/1.png
-[name]This is name of product 1
-[description]this is description1
-[price]10000001
+[name]Laptop Gaming GIGABYTE Aorus 15 9MF E2VN583SH
+
+[image]../../image/Laptop1.1.webp
+[image]../../image/Laptop1.2.webp
+[image]../../image/Laptop1.3.webp
+
+[description]CPU: i5-12500H
+[description]Ram: 8GB (1x8GB) DDR5 
+[description]Ổ cứng: 512GB SSD M.2 2280 PCIe NVMe Gen4 x4
+[description]Màn hình: 15.6 inch Thin Bezel FHD (1920x1080) IPS 360Hz, 100% sRGB
+[description]Card đồ họa: NVIDIA GeForce RTX 4050 GPU 6GB GDDR6 + Intel Iris Xe Graphics
+
+[price]24900000
 #
-[image]../../image/1.png
-[image]../../image/1.png
-[name]This is name of product 2
-[description]this is description2
-[price]10000002
+[name]Laptop HP 15S FR5005TU
+
+[image]../../image/Laptop2.1.webp
+[image]../../image/Laptop2.2.webp
+[image]../../image/Laptop2.3.png
+[image]../../image/Laptop2.4.webp
+
+[description]CPU: Intel® Core™ i7 1260P
+[description]Ram: 16GB DDR4
+[description]Ổ cứng: SSD 512GB
+[description]Màn hình: 15.6 inch FHD
+[description]Card đồ họa: Intel Iris Xe Graphics
+[description]Màu sắc: Bạc
+
+[price]14790000
+#
+[name]Laptop Gaming Lenovo LOQ 15IAX9 83GS001SVN
+
+[image]../../image/Laptop3.1.webp
+[image]../../image/Laptop3.2.webp
+[image]../../image/Laptop3.3.webp
+
+[description]CPU: i5-12450HX
+[description]Ram: 1x 12GB SO-DIMM DDR5-4800
+[description]Ổ cứng: 512GB SSD M.2 2242 PCIe® 4.0x4 NVMe®
+[description]Màn hình: 15.6 inch FHD (1920x1080) IPS, 144Hz
+[description]Card đồ họa: NVIDIA® GeForce RTX™ 2050 4GB GDDR6
+
+[price]17990000
+#
+[name]LMàn hình Xiaomi Redmi 1A P24FBB-RA | 23.8 inch, Full HD, IPS, 100Hz, phẳng
+
+[image]../../image/Screen1.1.webp
+[image]../../image/Screen1.2.webp
+[image]../../image/Screen1.3.webp
+[image]../../image/Screen1.4.webp
+
+[description]Hãng sản xuất	    Xiaomi
+[description]Loại màn hình	    IPS
+[description]Kích thước	        23.8 inch
+[description]Trọng lượng	    2.98 kg
+[description]Độ phân giải	    1920 x 1080
+[description]Tỉ lệ màn hình	    16:9
+[description]Tần số quét	    100Hz
+[description]Thời gian phản hồi	Chưa có thông tin
+[description]Loại tấm nền	    IPS
+[description]Độ sáng	        250 nit
+[description]Tỉ lệ tương phản	1000:1
+
+[price]1930000
+#
+[name]Màn hình Viewsonic VA1903A | 18.5 inch, TN, 60Hz, phẳng
+
+[image]../../image/Screen2.1.webp
+[image]../../image/Screen2.2.webp
+[image]../../image/Screen2.3.webp
+[image]../../image/Screen2.4.webp
+
+[description]Hãng sản xuất	Viewsonic
+[description]Loại màn hình	Màn hình LCD
+[description]Kích thước	18.5 inch
+[description]Trọng lượng	Đang cập nhật
+[description]Độ phân giải	HD+ (1366 x 768)
+[description]Tỉ lệ màn hình	16:9
+[description]Tần số quét	60Hz
+[description]Thời gian phản hồi	5ms
+[description]Loại tấm nền	TN
+[description]Độ sáng	200 cd/m2
+
+[price]1350000
 #
