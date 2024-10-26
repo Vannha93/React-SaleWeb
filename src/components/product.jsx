@@ -5,23 +5,22 @@ import { useState } from 'react';
 const Product = (props) => {
 
     const [open, setOpen] = useState(false);
-    const { imageSrc, productName, price, description, cartItems, setCartItems, addItemToCart } = props;
+    const { id, imageSrc, productName, price, description, cartItems, setCartItems, addItemToCart } = props;
     //debugger;
-    // Custom CSS cho carousel
     const carouselContainerStyle = {
-        width: "500px", // Chiều ngang cố định
-        height: "300px", // Chiều cao cố định
-        margin: "0 auto", // Để căn giữa carousel
-        overflow: "hidden", // Đảm bảo không bị tràn
+        width: "500px",
+        height: "300px",
+        margin: "0 auto",
+        overflow: "hidden",
     };
 
     const carouselItemStyle = {
-        width: "100%", // Chiều ngang của mỗi slide bằng chiều ngang của carousel
-        height: "100%", // Chiều cao của mỗi slide bằng chiều cao của carousel
+        width: "100%",
+        height: "100%",
 
-        textAlign: "center", // Để căn giữa nội dung ngang
-        background: "#364d79", // Màu nền cho dễ nhìn
-        color: "#fff", // Màu chữ
+        textAlign: "center",
+        background: "#364d79",
+        color: "#fff",
     };
 
     const imageStyle = {
@@ -31,12 +30,12 @@ const Product = (props) => {
     };
 
     function formatPrice(price) {
-        return price.toLocaleString('vi-VN') + ' vnđ'; // Định dạng theo chuẩn tiếng Việt, dấu chấm ngăn cách
+        return price.toLocaleString('vi-VN') + ' vnđ';
     }
 
     const handleOk = () => {
         const item = {
-            id: 1,
+            id: id,
             image: imageSrc,
             name: productName,
             quantity: 1,

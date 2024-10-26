@@ -4,6 +4,7 @@ import Product from "./product";
 import "./products.css"
 import { Col, Row } from "antd";
 import { useOutletContext } from "react-router-dom";
+import { v4 as uuidv4 } from 'uuid';
 
 const Products = (props) => {
     const { cartItems, setCartItems, addItemToCart } = useOutletContext();
@@ -28,6 +29,7 @@ const Products = (props) => {
         const lines = content.split("\n");
         const tmp_items = [];
         let item = {
+            id: uuidv4(),
             image: [],
             name: "",
             description: [],
@@ -55,13 +57,13 @@ const Products = (props) => {
                 tmp_items.push(item);
             }
             item = {
+                id: uuidv4(),
                 image: [],
                 name: "",
                 description: [],
                 price: 0
             };; // reset item
         }
-
         return tmp_items;
     };
 
@@ -76,6 +78,7 @@ const Products = (props) => {
                         <Col key={item.key} ali>
                             <p className="item">
                                 <Product
+                                    id={item.id}
                                     imageSrc={item.image}
                                     productName={item.name}
                                     price={item.price}

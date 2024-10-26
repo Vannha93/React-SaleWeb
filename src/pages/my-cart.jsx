@@ -37,7 +37,11 @@ const MyCart = (props) => {
                             <td>{item.quantity}</td>
                             <td>{item.price.toLocaleString("vi-VN")} đ</td>
                             <td>{(item.price * item.quantity).toLocaleString("vi-VN")} đ</td>
-                            <td><DeleteOutlined style={{ cursor: 'pointer', color: 'black' }} onclick={() => { handleDeleteItem(item.id) }} /></td>
+                            <td>
+                                <button>
+                                    <DeleteOutlined className='delete-style' onClick={() => { handleDeleteItem(item.id) }} />
+                                </button>
+                            </td>
                         </tr>
                     ))}
                 </tbody>

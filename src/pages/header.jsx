@@ -1,6 +1,6 @@
 import { ShoppingCartOutlined } from "@ant-design/icons"
 import "./header.css"
-import { Badge, Button, Modal } from "antd"
+import { Badge, Button, Form, Input, Modal } from "antd"
 import { NavLink } from "react-router-dom"
 import { useEffect, useState } from "react"
 import MyCart from "./my-cart"
@@ -14,8 +14,16 @@ const HeaderContent = (props) => {
         setIsOpenCart(true);
     };
 
-    const handleOk = () => {
+    const handleOk = (values) => {
         setIsOpenCart(false);
+
+        const orderData = {
+            customerInfo: values,
+            cartItems,
+            totalAmount: 1,
+        };
+        alert("Đơn hàng của bạn đã được đặt thành công!");
+        form.resetFields();
     };
 
     const handleCancel = () => {
@@ -39,6 +47,18 @@ const HeaderContent = (props) => {
         setCartCount(totalCount);
     }, [cartItems]);
 
+    const [form] = Form.useForm();
+
+    const handleOrderSubmit = (values) => {
+        const orderData = {
+            customerInfo: values,
+            cartItems,
+            totalAmount: 1,
+        };
+        alert("Đơn hàng của bạn đã được đặt thành công!");
+        form.resetFields();
+    };
+
     return (
         <>
             <div className="header">
@@ -59,7 +79,7 @@ const HeaderContent = (props) => {
                 open={isOpenCart}
                 onOk={handleOk}
                 onCancel={handleCancel}
-                mask={false} // Không hiện lớp che mờ xung quanh
+                okText="Đặt Hàng"
                 style={cartModalStyle}
             >
                 <div style={{ padding: "20px" }}>
@@ -68,6 +88,47 @@ const HeaderContent = (props) => {
                         setCartItems={setCartItems}
                         addItemToCart={addItemToCart}
                     />
+
+                    <h3>Thông Tin Khách Hàng</h3>
+                    <Form form={form} onFinish={handleOrderSubmit} layout="vertical">
+                        <Form.Item
+                            label="Tên khách hàng"
+                            name="customerName"
+                            rules={[{ required: true, message: "Vui lòng nhập tên khách hàng" }]}
+                        >
+                            <Input placeholder="Tên khách hàng" />
+                        </Form.Item>
+
+                        <Form.Item
+                            label="Số điện thoại"
+                            name="phone"
+                            rules={[{ required: true, message: "Vui lòng nhập số điện thoại" }]}
+                        >
+                            <Input placeholder="Số điện thoại" />
+                        </Form.Item>
+
+                        <Form.Item
+                            label="Địa chỉ"
+                            name="address"
+                            rules={[{ required: true, message: "Vui lòng nhập địa chỉ" }]}
+                        >
+                            <Input placeholder="Địa chỉ" />
+                        </Form.Item>
+
+                        <Form.Item
+                            label="Email"
+                            name="email"
+                            rules={[{ type: "email", message: "Email không hợp lệ" }]}
+                        >
+                            <Input placeholder="Email (không bắt buộc)" />
+                        </Form.Item>
+
+                        {/* <Form.Item>
+                            <Button type="primary" htmlType="submit">
+                                Đặt Hàng
+                            </Button>
+                        </Form.Item> */}
+                    </Form>
                 </div>
             </Modal>
         </>

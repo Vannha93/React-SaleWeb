@@ -34,3 +34,12 @@
 .total h3 {
     color: #d9534f;
 }
+
+.delete-style {
+    cursor: pointer;
+    color: #000000;
+}
+
+.delete-style:hover {
+    color: #f66d05;
+}
