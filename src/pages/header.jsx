@@ -122,12 +122,6 @@ const HeaderContent = (props) => {
                         >
                             <Input placeholder="Email (không bắt buộc)" />
                         </Form.Item>
-
-                        {/* <Form.Item>
-                            <Button type="primary" htmlType="submit">
-                                Đặt Hàng
-                            </Button>
-                        </Form.Item> */}
                     </Form>
                 </div>
             </Modal>
